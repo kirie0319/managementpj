@@ -26,3 +26,6 @@ Route::post('/product/update', [ProductController::class, 'update']);
 Route::post('/product/destroy', [ProductController::class, 'destroy']);
 Route::post('/product/other', [ProductController::class, 'other']);
 Route::post('/user', [ProductController::class, 'create']);
+Route::get('/user/{id}', [UserController::class, 'show']);
+Route::get('/list', [UserController::class, 'index']);
+Route::post('/user/register', [UserController::class, 'create']);
